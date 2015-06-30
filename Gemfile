@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rest-client'
+
 gem 'foundation-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
