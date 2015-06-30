@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem ''
 
 gem 'foundation-rails'
 
