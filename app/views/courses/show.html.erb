@@ -1,0 +1,7 @@
+<h1> Show page for  <%= @course.name %> </h1>
+
+<% count = 0 %>
+<% @name_array.each do |name| %>
+	<p> name:  <%= name %>, grade: <%= @grade_hash[@id_array[count]] %> </p>
+	<% count += 1 %>
+<% end %>
