@@ -1,7 +1,23 @@
-<h1> Show page for  <%= @course.name %> </h1>
+<style type="text/css">
+	h1{
+		text-align: center;
+	}
+</style>
+<h1> Grades for  <%= @course.name %> </h1>
 
 <% count = 0 %>
 <% @name_array.each do |name| %>
-	<p> name:  <%= name %>, grade: <%= @grade_hash[@id_array[count]] %> </p>
-	<% count += 1 %>
+
+<% if count != 0 %>
+<div class="row">
+	<div class="small-9 column">
+		<p> <%= name %> </p>
+	</div>
+	<div class="small-3 column">
+		<p> <%= gradeify(@grade_hash[@id_array[count]])%> </p>
+	</div>
+</div>
+<%end %>
+<% count += 1 %>
+
 <% end %>

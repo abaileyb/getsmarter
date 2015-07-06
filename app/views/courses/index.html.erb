@@ -1,5 +1,18 @@
-<h1>Course's Index Page</h1>
+<style type="text/css">
+	h1{
+		text-align: center;
+	}
+
+</style>
+
+<h1>My Courses</h1>
+
+
 
 <% @courses.each do |course| %>
-	<h1><%= course.cid %></h1>
+<div class="row">
+<div class="small-12 column">
+		<p> <%= link_to course.name, course_path(course) %></p>	
+	</div>
+</div>
 <% end %>
